@@ -78,6 +78,7 @@ input.rounded{background-color:#cc0000;color:#fff;cursor:pointer;font-weight:bol
 /* bordered boxes used on most pages */
 div.edgy{width:auto;border:1px solid #ccc;border-width:1px 3px;margin:20px 15px;padding:30px 20px;}
 div.edgy_error{border:1px solid #ee0000;background-color:#ffeeee;border-width:1px 3px;}
+div.edgy input.client-name, div.edgy input.date, div.edgy input.client-email {float: left; margin: 0 10px 0 0;}
 
 /* normal input boxes and their labels */
 div.edgy input{display:block;text-transform:capitalize;color:#444;font-size:14px;width:400px;height:20px;padding:2px 4px;margin:0 0 8px 0;
@@ -122,7 +123,7 @@ div.edgy input.radio{display:inline;width:15px;height:15px;margin:8px 8px 8px 0;
 div.edgy label.sub_radio{display:inline;font-size:14px;font-weight:normal;margin:0;padding:0;}
 
 /* text shown below input fields */
-div.edgy p.field_desc{color:#aaa;font-size:13px;margin:4px 0 0 0;}
+div.edgy p.field_desc{color:#aaa;font-size:13px;margin:10px 0 0 0;}
 div.edgy p.field_desc.error{color:#ee0000;}
 div.edgy p.field_desc a{color:#0088FF;font-size:13px;font-weight:normal;text-decoration:underline;}
 div.edgy p.field_desc a:hover{color:#0066FF;font-weight:normal;text-decoration:underline;}
@@ -210,4 +211,24 @@ img { border: 0; }
 #homeHeaderImages img {padding:0 3px;}
 
 .align-right { float:right; margin: 0 0 5px 5px; }
-.align-left { float:left; margin: 0 5px 5px 0;
+.align-left { float:left; margin: 0 5px 5px 0; }
+
+.DEBUG {
+    display: none !important;
+}
+
+#client-title {
+    float: left;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.date-to {
+    font-size: 15px;
+    margin: 5px 10px 0 0;
+    float: left;
+}
+
+label.error {
+    color: red;
+}
