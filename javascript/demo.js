@@ -2,6 +2,12 @@ function initialize() {
     bindEvents();
     
     initFormValidator();
+    
+    $('.input-daterange').datepicker({
+        autoclose: true,
+        todayHighlight: true,
+        format: 'yyyy-mm-dd'
+    });
 }
 
 function bindEvents() {
@@ -31,8 +37,7 @@ function initFormValidator() {
                     client_surname: {
                         minlength: 6,
                         maxlength: 30,
-                        required: true,
-                        email: true
+                        required: true
                     },                
                     client_address_line1: {
                         minlength: 2,

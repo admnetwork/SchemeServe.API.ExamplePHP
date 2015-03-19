@@ -27,7 +27,7 @@ function prepareSubmitQuoteXML() {
     
     $dom->getElementsByTagName("firstname")->item(0)->nodeValue = $clientFirstName;
     $dom->getElementsByTagName("surname")->item(0)->nodeValue = $clientSurname;
-    $dom->getElementsByTagName("title")->item(0)->nodeValue = $titleText;
+    $dom->getElementsByTagName("title")->item(0)->nodeValue = $clientTitle;
 
     $dom->getElementsByTagName("addressline1")->item(0)->nodeValue = $clientAddressLine1;
     $dom->getElementsByTagName("addressline2")->item(0)->nodeValue = $clientAddressLine2;
@@ -36,11 +36,11 @@ function prepareSubmitQuoteXML() {
 
     // general questions
     
-    $questions = $root->getElementsByTagName('value');
+    $questions = $dom->getElementsByTagName('value');
 
-    foreach ($answers as $answer) {
-        $questionid = $answer->getElementsByTagName('questionid')->nodeValue;
-        $answer = $answer->getElementsByTagName('value');
+    foreach ($questions as $question) {
+        $questionid = $question->getElementsByTagName('questionid')->nodeValue;
+        $answer = $question->getElementsByTagName('value');
 
         switch ($questionid) {
             case "ClientEmailField":

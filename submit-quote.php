@@ -4,7 +4,7 @@
     <head>
         <title><?php echo $page->Title; ?></title>
         <link href="style/default.css" rel="stylesheet" type="text/css" />
-        <link href="style/datepicker.css" rel="stylesheet" type="text/css" />
+        <link href="style/datepicker.min.css" rel="stylesheet" type="text/css" />
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -22,7 +22,7 @@
                     <h1>Get a Quote (example)</h1>
                     <h2>API Demo Scheme (direct)</h2>
 
-                    <form id="submitQuoteForm">
+                    <form id="submitQuoteForm" action="quote-submitted.php" method="post">
                         <div class="edgy">
                             <label for="name">Client name</label>
                             <select id="client-title" name="client_title" tabindex="1">
@@ -81,7 +81,7 @@
                             </select>
                         </div>
 
-                        <input type="submit" class="rounded" value="Back" onclick="window.location = 'index.php'"/>
+                        <input type="button" class="rounded" value="Back" onclick="window.location = 'index.php'"/>
 
                         <input type="submit" id="submitQuote" class="rounded-DEBUG right" value="Submit Quote"/>
                     </form>
