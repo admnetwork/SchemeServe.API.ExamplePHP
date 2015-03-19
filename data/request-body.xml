@@ -14,8 +14,8 @@
                <answers>
                   <answer>
                      <clientname>
-                        <firstname>Kosta</firstname>
-                        <surname>Hristov</surname>
+                        <firstname>Adam</firstname>
+                        <surname>Smith</surname>
                         <title>Dr</title>
                      </clientname>
                   </answer>
@@ -30,10 +30,10 @@
                <answers>
                   <answer>
                      <address>
-                        <addressline1>Sofia 1</addressline1>
-                        <addressline2>Sofia 2</addressline2>
-                        <town>Sofia 3</town>
-                        <county>Sofia 4</county>
+                        <addressline1>Queensway</addressline1>
+                        <addressline2>Queensway</addressline2>
+                        <town>London</town>
+                        <county>London</county>
                      </address>
                   </answer>
                </answers>
@@ -46,7 +46,7 @@
                <description>Client email</description>
                <answers>
                   <answer>
-                     <value>emma.johnson8293@gmail.com</value>
+                     <value>demo@gmail.com</value>
                   </answer>
                </answers>
             </question>
