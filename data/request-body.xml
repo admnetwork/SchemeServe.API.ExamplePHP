@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <case xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
    <questionset>
       <questionpage>
@@ -7,7 +7,7 @@
          <questions>
             <question>
                <helptext>help tip here</helptext>
-               <tag />
+               <tag/>
                <type>Client.ContactName</type>
                <questionid>ClientNameField</questionid>
                <description>Client name</description>
@@ -16,37 +16,37 @@
                      <clientname>
                         <firstname>Kosta</firstname>
                         <surname>Hristov</surname>
-                        <title>Mr</title>
+                        <title>Dr</title>
                      </clientname>
                   </answer>
                </answers>
             </question>
             <question>
                <helptext>address help tip</helptext>
-               <tag />
+               <tag/>
                <type>Client.AddressNoPostCode</type>
                <questionid>ClientAddressField</questionid>
                <description>Client address</description>
                <answers>
                   <answer>
                      <address>
-                        <addressline1><![CDATA[8 waldegrave road, teddington]]></addressline1>
-                        <addressline2><![CDATA[8 waldegrave road, teddington]]></addressline2>
-                        <town>London</town>
-                        <county>London</county>
+                        <addressline1>Sofia 1</addressline1>
+                        <addressline2>Sofia 2</addressline2>
+                        <town>Sofia 3</town>
+                        <county>Sofia 4</county>
                      </address>
                   </answer>
                </answers>
             </question>
             <question>
                <helptext>email help tip</helptext>
-               <tag />
+               <tag/>
                <type>Client.Email</type>
                <questionid>ClientEmailField</questionid>
                <description>Client email</description>
                <answers>
                   <answer>
-                     <value><![CDATA[1984-01-27]]></value>
+                     <value>emma.johnson8293@gmail.com</value>
                   </answer>
                </answers>
             </question>
@@ -57,74 +57,50 @@
          <questionpagename>General Questions</questionpagename>
          <questions>
             <question>
-               <helptext />
-               <tag />
+               <helptext/>
+               <tag/>
                <type>DatePicker</type>
                <questionid>StartDateField</questionid>
                <description>Start date of trip</description>
                <answers>
                   <answer>
-                     <value><![CDATA[1984-01-27]]></value>
+                     <value>2012-04-25</value>
                   </answer>
                </answers>
             </question>
             <question>
-               <helptext />
-               <tag />
+               <helptext/>
+               <tag/>
                <type>DatePicker</type>
                <questionid>EndDateField</questionid>
                <description>End date of trip</description>
                <answers>
                   <answer>
-                     <value><![CDATA[1984-01-27]]></value>
+                     <value>2012-04-26</value>
                   </answer>
                </answers>
             </question>
             <question>
-               <helptext />
-               <tag />
+               <helptext/>
+               <tag/>
                <type>DropDown</type>
                <questionid>DestinationField</questionid>
                <description>Destination</description>
                <answers>
                   <answer>
-                     <value><![CDATA[1984-01-27]]></value>
+                     <value>Europe</value>
                   </answer>
                </answers>
             </question>
             <question>
-               <helptext />
-               <tag />
+               <helptext/>
+               <tag/>
                <type>YesNoDropDown</type>
                <questionid>PartnerTravellingField</questionid>
                <description>Partner Travelling</description>
                <answers>
                   <answer>
-                     <value><![CDATA[1984-01-27]]></value>
-                  </answer>
-               </answers>
-            </question>
-            <question>
-               <helptext />
-               <tag />
-               <type>YesNoDropDown</type>
-               <questionid>FamilyTravellingField</questionid>
-               <description>Family Travelling</description>
-               <answers>
-                  <answer>
-                     <value><![CDATA[1984-01-27]]></value>
-                  </answer>
-               </answers>
-            </question>
-            <question>
-               <helptext />
-               <tag />
-               <type>Text</type>
-               <questionid>NumberOfPersonsTravellingField</questionid>
-               <description>Number of Persons Travelling</description>
-               <answers>
-                  <answer>
-                     <value><![CDATA[1984-01-27]]></value>
+                     <value>Yes</value>
                   </answer>
                </answers>
             </question>
@@ -133,6 +109,7 @@
    </questionset>
    <schemeid>4325</schemeid>
    <archived>false</archived>
-   <client />
+   <client/>
    <deleted>false</deleted>
+   <isquotation>true</isquotation>
 </case>

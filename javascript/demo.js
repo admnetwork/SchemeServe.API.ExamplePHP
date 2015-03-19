@@ -3,11 +3,7 @@ function initialize() {
     
     initFormValidator();
     
-    $('.input-daterange').datepicker({
-        autoclose: true,
-        todayHighlight: true,
-        format: 'yyyy-mm-dd'
-    });
+    initDatePickers();
 }
 
 function bindEvents() {
@@ -81,7 +77,6 @@ function initFormValidator() {
                     $(element).parent().removeClass ("edgy_error");
                 },
                 errorPlacement: function(error, element) {
-                    debugger;
                     error.appendTo($(element).parent());
                 }
             });
@@ -103,6 +98,14 @@ function validateEmail($email) {
     var emailRegex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
     return emailRegex.test($email);
+}
+
+function initDatePickers() {
+    $('.input-daterange').datepicker({
+        autoclose: true,
+        todayHighlight: true,
+        format: 'yyyy-mm-dd'
+    });
 }
 
 jQuery(document).ready(function() {
