@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<case xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+   <questionset>
+      <questionpage>
+         <questionpageid>Page1</questionpageid>
+         <questionpagename>Client Details</questionpagename>
+         <questions>
+            <question>
+               <helptext>help tip here</helptext>
+               <tag />
+               <type>Client.ContactName</type>
+               <questionid>ClientNameField</questionid>
+               <description>Client name</description>
+               <answers>
+                  <answer>
+                     <clientname>
+                        <firstname>Kosta</firstname>
+                        <surname>Hristov</surname>
+                        <title>Mr</title>
+                     </clientname>
+                  </answer>
+               </answers>
+            </question>
+            <question>
+               <helptext>address help tip</helptext>
+               <tag />
+               <type>Client.AddressNoPostCode</type>
+               <questionid>ClientAddressField</questionid>
+               <description>Client address</description>
+               <answers>
+                  <answer>
+                     <address>
+                        <addressline1><![CDATA[8 waldegrave road, teddington]]></addressline1>
+                        <addressline2><![CDATA[8 waldegrave road, teddington]]></addressline2>
+                        <town>London</town>
+                        <county>London</county>
+                     </address>
+                  </answer>
+               </answers>
+            </question>
+            <question>
+               <helptext>email help tip</helptext>
+               <tag />
+               <type>Client.Email</type>
+               <questionid>ClientEmailField</questionid>
+               <description>Client email</description>
+               <answers>
+                  <answer>
+                     <value><![CDATA[1984-01-27]]></value>
+                  </answer>
+               </answers>
+            </question>
+         </questions>
+      </questionpage>
+      <questionpage>
+         <questionpageid>Page2</questionpageid>
+         <questionpagename>General Questions</questionpagename>
+         <questions>
+            <question>
+               <helptext />
+               <tag />
+               <type>DatePicker</type>
+               <questionid>StartDateField</questionid>
+               <description>Start date of trip</description>
+               <answers>
+                  <answer>
+                     <value><![CDATA[1984-01-27]]></value>
+                  </answer>
+               </answers>
+            </question>
+            <question>
+               <helptext />
+               <tag />
+               <type>DatePicker</type>
+               <questionid>EndDateField</questionid>
+               <description>End date of trip</description>
+               <answers>
+                  <answer>
+                     <value><![CDATA[1984-01-27]]></value>
+                  </answer>
+               </answers>
+            </question>
+            <question>
+               <helptext />
+               <tag />
+               <type>DropDown</type>
+               <questionid>DestinationField</questionid>
+               <description>Destination</description>
+               <answers>
+                  <answer>
+                     <value><![CDATA[1984-01-27]]></value>
+                  </answer>
+               </answers>
+            </question>
+            <question>
+               <helptext />
+               <tag />
+               <type>YesNoDropDown</type>
+               <questionid>PartnerTravellingField</questionid>
+               <description>Partner Travelling</description>
+               <answers>
+                  <answer>
+                     <value><![CDATA[1984-01-27]]></value>
+                  </answer>
+               </answers>
+            </question>
+            <question>
+               <helptext />
+               <tag />
+               <type>YesNoDropDown</type>
+               <questionid>FamilyTravellingField</questionid>
+               <description>Family Travelling</description>
+               <answers>
+                  <answer>
+                     <value><![CDATA[1984-01-27]]></value>
+                  </answer>
+               </answers>
+            </question>
+            <question>
+               <helptext />
+               <tag />
+               <type>Text</type>
+               <questionid>NumberOfPersonsTravellingField</questionid>
+               <description>Number of Persons Travelling</description>
+               <answers>
+                  <answer>
+                     <value><![CDATA[1984-01-27]]></value>
+                  </answer>
+               </answers>
+            </question>
+         </questions>
+      </questionpage>
+   </questionset>
+   <schemeid>4325</schemeid>
+   <archived>false</archived>
+   <client />
+   <deleted>false</deleted>
+</case>
