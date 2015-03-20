@@ -80,6 +80,8 @@ div.edgy{width:auto;border:1px solid #ccc;border-width:1px 3px;margin:20px 15px;
 div.edgy_error{border:1px solid #ee0000;background-color:#ffeeee;border-width:1px 3px;}
 div.edgy input.client-name, div.edgy input.date, div.edgy input.client-email {float: left; margin: 0 10px 0 0;}
 
+div.edgy input.client-email {text-transform: lowercase}
+
 /* normal input boxes and their labels */
 div.edgy input{display:block;text-transform:capitalize;color:#444;font-size:14px;width:400px;height:20px;padding:2px 4px;margin:0 0 8px 0;
 	border-bottom-style: inset;
