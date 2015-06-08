@@ -1,4 +1,7 @@
 PHP example insurance website utilizing the SchemeServe API (see http://insurancesoftware.com/theService/api/).
 
+For a simple example of querying the API see the simple-demo.php file in the root. 
+For a more elaborate example see the demo project in the DemoSite folder. 
+
 Originally created by Adam Bishop.
 (c) SchemeServe (ADM Network Ltd) 2013
