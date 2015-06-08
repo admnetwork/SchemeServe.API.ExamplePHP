@@ -1,0 +1,2426 @@
+{
+    "paymentdetails": {
+        "accountname": "Bank Name",
+        "accountnumber": "88888888",
+        "bic": "HELLOTST",
+        "collectionamount": 3.00,
+        "iban": "AL90208110080000001039531801",
+        "paymentmethod": 10,
+        "sortcode": "111111",
+        "paymentmethodid": 5,
+        "paymentfrequencyid": 9
+    },
+    "questionset": [{
+        "questionpageid": "Page1",
+        "questionpagename": "Client Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "Client.ContactName",
+            "questionid": "2347ClientName",
+            "description": "Client Name",
+            "answers": [{
+                "clientname": {
+                    "firstname": "sdfsdf",
+                    "surname": "sdfsdf",
+                    "title": null
+                },
+                "description": null,
+                "value": "sdfsdf sdfsdf"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Client.Address",
+            "questionid": "2347ClientAddress",
+            "description": "Client Address",
+            "answers": [{
+                "address": {
+                    "addressline1": ",,Azalee",
+                    "addressline2": "Charleville View,",
+                    "county": "Offaly",
+                    "postcode": "",
+                    "town": "Tullamore"
+                },
+                "description": null,
+                "value": null
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Client.Email",
+            "questionid": "2347ClientEmail",
+            "description": "Client Email",
+            "answers": [{
+                "description": null,
+                "value": "sdfsd@buy4now.com"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Client.Phone",
+            "questionid": "2347ClientPhone",
+            "description": "Client Phone Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Client.MobilePhone",
+            "questionid": "2347ClientMobile",
+            "description": "Client Mobile Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }]
+    }, {
+        "questionpageid": "Page13",
+        "questionpagename": "Policy Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "InceptionDate",
+            "questionid": "RequestedInceptionDate",
+            "description": "When would you like cover to commence",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "PaymentOption",
+            "questionid": "ActualPaymentPeriod",
+            "description": "Actual Payment Period",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "RequestedPaymentPeriod",
+                "action": null
+            }],
+            "type": "DropDown",
+            "questionid": "RequestedPaymentPeriod",
+            "description": "-Hidden- Requested Payment Period",
+            "answers": [{
+                "description": "Monthly",
+                "value": "Monthly"
+            }, {
+                "description": "Yearly",
+                "value": "Yearly"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "NumberOfDevices",
+            "description": "How many devices do you want to cover ?",
+            "answers": [{
+                "description": "1",
+                "value": "1"
+            }, {
+                "description": "2",
+                "value": "2"
+            }, {
+                "description": "3",
+                "value": "3"
+            }, {
+                "description": "4",
+                "value": "4"
+            }, {
+                "description": "5",
+                "value": "5"
+            }, {
+                "description": "6",
+                "value": "6"
+            }, {
+                "description": "7",
+                "value": "7"
+            }, {
+                "description": "8",
+                "value": "8"
+            }, {
+                "description": "9",
+                "value": "9"
+            }, {
+                "description": "10",
+                "value": "10"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Text",
+            "questionid": "VoucherCode",
+            "description": "Voucher Code",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Text",
+            "questionid": "AffiliateCode",
+            "description": "Affiliate Code",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }]
+    }, {
+        "questionpageid": "Page2",
+        "questionpagename": "Device 1 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium",
+            "description": "-Hidden- Premium for Device 1",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo",
+            "description": "Liquid Damage",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }]
+    }, {
+        "questionpageid": "Page3",
+        "questionpagename": "Device 2 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType2",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails2",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails2",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier2",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier2",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType2",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber2",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber2",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType2",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI2",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI2",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType2",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber2",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber2",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium2",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium2",
+            "description": "-Hidden- Premium for Device 2",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras2",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo2",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo2",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo2",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo2",
+            "description": "Liquid Damage",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "1",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page3",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "Page4",
+        "questionpagename": "Device 3 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType3",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails3",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails3",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier3",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier3",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType3",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber3",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber3",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType3",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI3",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI3",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType3",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber3",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber3",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium3",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium3",
+            "description": "-Hidden- Premium for Device 3",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras3",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo3",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo3",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo3",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo3",
+            "description": "Liquid Damage",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "2",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page4",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "Page5",
+        "questionpagename": "Device 4 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType4",
+            "description": "What type of device is this ?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails4",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails4",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier4",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier4",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType4",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNotActiveYet4",
+                "action": null
+            }],
+            "type": "CheckBox",
+            "questionid": "MobileDeviceNotActiveYet4",
+            "description": "Tick here if your mobile phone\/device does not yet have a phone number \/ IMEI.<br\/><span style=\"margin-left:25px\">(You will need to supply these details later by calling 01702 222 888).<\/span>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType4",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber4",
+                "action": null
+            }, {
+                "rules": [{
+                    "test": "checked",
+                    "testquestion": "MobileDeviceNotActiveYet4",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber4",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber4",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType4",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI4",
+                "action": null
+            }, {
+                "rules": [{
+                    "test": "checked",
+                    "testquestion": "MobileDeviceNotActiveYet4",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI4",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI4",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType4",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber4",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber4",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium4",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium4",
+            "description": "-Hidden- Premium for Device 4",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras4",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo4",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo4",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo4",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo4",
+            "description": "Liquid",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "3",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page5",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "Page6",
+        "questionpagename": "Device 5 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType5",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }, {
+                "description": "Laptop",
+                "value": "Laptop"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails5",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails5",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier5",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier5",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType5",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber5",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber5",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType5",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI5",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI5",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType5",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber5",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber5",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium5",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium5",
+            "description": "-Hidden- Premium for Device 5",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras5",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo5",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo5",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo5",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo5",
+            "description": "Liquid",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "4",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page6",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "Page7",
+        "questionpagename": "Device 6 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType6",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails6",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails6",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier6",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier6",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType6",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber6",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber6",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType6",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI6",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI6",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType6",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber6",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber6",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium6",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium6",
+            "description": "-Hidden- Premium for Device 6",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras6",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo6",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo6",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo6",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo6",
+            "description": "Liquid Damage",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "5",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page7",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "Page8",
+        "questionpagename": "Device 7 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType7",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails7",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails7",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier7",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier7",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType7",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber7",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber7",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType7",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI7",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI7",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType7",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber7",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber7",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium7",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium7",
+            "description": "-Hidden- Premium for Device 7",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras7",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo7",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo7",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo7",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo7",
+            "description": "Liquid Damage",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "6",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page8",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "Page9",
+        "questionpagename": "Device 8 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType8",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails8",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails8",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier8",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier8",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType8",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber8",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber8",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType8",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI8",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI8",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType8",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber8",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber8",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium8",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium8",
+            "description": "-Hidden- Premium for Device 8",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras8",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo8",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo8",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo8",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo8",
+            "description": "Liquid Damage",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "7",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page9",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "Page10",
+        "questionpagename": "Device 9 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType9",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails9",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails9",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier9",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier9",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType9",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber9",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber9",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType9",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI9",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI9",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType9",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber9",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber9",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium9",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium9",
+            "description": "-Hidden- Premium for Device 9",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras9",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo9",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo9",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo9",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo9",
+            "description": "Liquid Damage",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "8",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page10",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "Page11",
+        "questionpagename": "Device 10 Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "DropDown",
+            "questionid": "DeviceType10",
+            "description": "What type of device is this?",
+            "answers": [{
+                "description": "- Select -",
+                "value": "- Select -"
+            }, {
+                "description": "Mobile Phone",
+                "value": "Mobile Phone"
+            }, {
+                "description": "Tablet",
+                "value": "Tablet"
+            }]
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDetails10",
+                "action": null
+            }],
+            "type": "FileLookup",
+            "questionid": "MobileDetails10",
+            "description": "Please select the Device Make and Model",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceTier10",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "DeviceTier10",
+            "description": "-Hidden- Device Tier",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType10",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceNumber10",
+                "action": null
+            }],
+            "type": "Number",
+            "questionid": "MobileDeviceNumber10",
+            "description": "Mobile Phone\/Device Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType10",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "MobileDeviceIMEI10",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "MobileDeviceIMEI10",
+            "description": "Mobile Phone\/Device IMEI",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Mobile Phone",
+                    "testquestion": "DeviceType10",
+                    "testtype": "NOT_EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DeviceSerialNumber10",
+                "action": null
+            }],
+            "type": "Text",
+            "questionid": "DeviceSerialNumber10",
+            "description": "Device Serial Number",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "zzzzz",
+                    "testquestion": "2347ClientName",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "DevicePremium10",
+                "action": null
+            }],
+            "type": "Money",
+            "questionid": "DevicePremium10",
+            "description": "-Hidden- Premium for Device 10",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "SmallTitle",
+            "questionid": "Extras10",
+            "description": "<b>Extras Selected<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "TheftYesNo10",
+            "description": "Theft",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "triggers": [{
+                "rules": [{
+                    "test": "Tablet",
+                    "testquestion": "DeviceType",
+                    "testtype": "EQUAL",
+                    "warningtext": ""
+                }],
+                "targetquestion": "LossYesNo10",
+                "action": null
+            }],
+            "type": "YesNo",
+            "questionid": "LossYesNo10",
+            "description": "Loss",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "YesNo",
+            "questionid": "LiquidYesNo10",
+            "description": "Liquid Damage",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }],
+        "triggers": [{
+            "rules": [{
+                "test": "9",
+                "testquestion": "NumberOfDevices",
+                "testtype": "GREATER_THAN",
+                "warningtext": ""
+            }],
+            "targetpage": "Page11",
+            "action": "DISPLAY"
+        }]
+    }, {
+        "questionpageid": "PageCalculation",
+        "questionpagename": "Cover Details",
+        "questions": [{
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "BasicPremiumTotal",
+            "description": "<b>Basic Premium Total<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "PackageDiscount",
+            "description": "- Discount",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "TotalPremiumNet",
+            "description": "<b>Total Premium (Net)<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "IPT",
+            "description": "+ IPT",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "PolicyFee",
+            "description": "+ Policy Fee",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "TotalPremium",
+            "description": "<b>Total Premium<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "CommissionFromInsurer",
+            "description": "<b>Commission From Insurer<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "Commission",
+            "description": "<b>Total Commission<\/b>",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }, {
+            "helptext": "",
+            "tag": "",
+            "type": "Total",
+            "questionid": "DueFromBroker",
+            "description": "(Due From Broker)",
+            "answers": [{
+                "description": "",
+                "value": "010101010"
+            }]
+
+        }]
+    }],
+    "schemeid": ####
+}

@@ -1,0 +1,3078 @@
+<case xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <questionset>
+        <questionpage>
+            <questionpageid>Page1</questionpageid>
+            <questionpagename>Client Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Client.ContactName</type>
+                    <questionid>2347ClientName</questionid>
+                    <description>Client Name</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Client.Address</type>
+                    <questionid>2347ClientAddress</questionid>
+                    <description>Client Address</description>
+                    <answers>
+                        <answer>
+                            <address>
+                                <addressline1>39 Fabian Crescent</addressline1>
+                                <addressline2>Shirley</addressline2>
+                                <county>West Midlands</county>
+                                <postcode>B90 2BA</postcode>
+                                <town>Solihull</town>
+                            </address>
+                            <description i:nil="true" />
+                            <value i:nil="true" />
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Client.Email</type>
+                    <questionid>2347ClientEmail</questionid>
+                    <description>Client Email</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>test@abv.bg</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Client.Phone</type>
+                    <questionid>2347ClientPhone</questionid>
+                    <description>Client Phone Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Client.MobilePhone</type>
+                    <questionid>2347ClientMobile</questionid>
+                    <description>Client Mobile Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page13</questionpageid>
+            <questionpagename>Policy Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>InceptionDate</type>
+                    <questionid>RequestedInceptionDate</questionid>
+                    <description>When would you like cover to commence</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>PaymentOption</type>
+                    <questionid>ActualPaymentPeriod</questionid>
+                    <description>Actual Payment Period</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>RequestedPaymentPeriod</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>DropDown</type>
+                    <questionid>RequestedPaymentPeriod</questionid>
+                    <description>-Hidden- Requested Payment Period</description>
+                    <answers>
+                        <answer>
+                            <description>Monthly</description>
+                            <value>Monthly</value>
+                        </answer>
+                        <answer>
+                            <description>Yearly</description>
+                            <value>Yearly</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>NumberOfDevices</questionid>
+                    <description>How many devices do you want to cover ?</description>
+                    <answers>
+                        <answer>
+                            <description>1</description>
+                            <value>1</value>
+                        </answer>
+                        <answer>
+                            <description>2</description>
+                            <value>2</value>
+                        </answer>
+                        <answer>
+                            <description>3</description>
+                            <value>3</value>
+                        </answer>
+                        <answer>
+                            <description>4</description>
+                            <value>4</value>
+                        </answer>
+                        <answer>
+                            <description>5</description>
+                            <value>5</value>
+                        </answer>
+                        <answer>
+                            <description>6</description>
+                            <value>6</value>
+                        </answer>
+                        <answer>
+                            <description>7</description>
+                            <value>7</value>
+                        </answer>
+                        <answer>
+                            <description>8</description>
+                            <value>8</value>
+                        </answer>
+                        <answer>
+                            <description>9</description>
+                            <value>9</value>
+                        </answer>
+                        <answer>
+                            <description>10</description>
+                            <value>10</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Text</type>
+                    <questionid>VoucherCode</questionid>
+                    <description>Voucher Code</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Text</type>
+                    <questionid>AffiliateCode</questionid>
+                    <description>Affiliate Code</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page2</questionpageid>
+            <questionpagename>Device 1 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium</questionid>
+                    <description>-Hidden- Premium for Device 1</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo</questionid>
+                    <description>Liquid Damage</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page3</questionpageid>
+            <questionpagename>Device 2 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType2</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails2</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails2</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier2</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier2</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType2</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber2</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber2</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType2</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI2</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI2</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType2</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber2</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber2</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium2</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium2</questionid>
+                    <description>-Hidden- Premium for Device 2</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras2</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo2</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo2</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo2</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo2</questionid>
+                    <description>Liquid Damage</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>1</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page3</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page4</questionpageid>
+            <questionpagename>Device 3 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType3</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails3</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails3</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier3</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier3</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType3</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber3</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber3</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType3</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI3</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI3</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType3</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber3</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber3</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium3</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium3</questionid>
+                    <description>-Hidden- Premium for Device 3</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras3</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo3</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo3</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo3</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo3</questionid>
+                    <description>Liquid Damage</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>2</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page4</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page5</questionpageid>
+            <questionpagename>Device 4 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType4</questionid>
+                    <description>What type of device is this ?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails4</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier4</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType4</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNotActiveYet4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>CheckBox</type>
+                    <questionid>MobileDeviceNotActiveYet4</questionid>
+                    <description>Tick here if your mobile phone/device does not yet have a phone number / IMEI.&lt;br/&gt;&lt;span style="margin-left:25px"&gt;(You will need to supply these details later by calling 01702 222 888).&lt;/span&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType4</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>checked</test>
+                                    <testquestion>MobileDeviceNotActiveYet4</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber4</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType4</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>checked</test>
+                                    <testquestion>MobileDeviceNotActiveYet4</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI4</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType4</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber4</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium4</questionid>
+                    <description>-Hidden- Premium for Device 4</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras4</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo4</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo4</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo4</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo4</questionid>
+                    <description>Liquid</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>3</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page5</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page6</questionpageid>
+            <questionpagename>Device 5 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType5</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                        <answer>
+                            <description>Laptop</description>
+                            <value>Laptop</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails5</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails5</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier5</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier5</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType5</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber5</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber5</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType5</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI5</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI5</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType5</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber5</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber5</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium5</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium5</questionid>
+                    <description>-Hidden- Premium for Device 5</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras5</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo5</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo5</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo5</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo5</questionid>
+                    <description>Liquid</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>4</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page6</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page7</questionpageid>
+            <questionpagename>Device 6 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType6</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails6</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails6</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier6</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier6</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType6</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber6</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber6</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType6</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI6</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI6</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType6</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber6</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber6</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium6</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium6</questionid>
+                    <description>-Hidden- Premium for Device 6</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras6</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo6</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo6</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo6</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo6</questionid>
+                    <description>Liquid Damage</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>5</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page7</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page8</questionpageid>
+            <questionpagename>Device 7 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType7</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails7</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails7</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier7</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier7</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType7</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber7</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber7</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType7</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI7</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI7</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType7</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber7</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber7</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium7</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium7</questionid>
+                    <description>-Hidden- Premium for Device 7</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras7</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo7</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo7</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo7</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo7</questionid>
+                    <description>Liquid Damage</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>6</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page8</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page9</questionpageid>
+            <questionpagename>Device 8 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType8</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails8</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails8</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier8</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier8</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType8</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber8</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber8</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType8</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI8</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI8</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType8</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber8</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber8</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium8</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium8</questionid>
+                    <description>-Hidden- Premium for Device 8</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras8</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo8</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo8</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo8</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo8</questionid>
+                    <description>Liquid Damage</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>7</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page9</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page10</questionpageid>
+            <questionpagename>Device 9 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType9</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails9</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails9</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier9</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier9</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType9</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber9</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber9</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType9</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI9</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI9</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType9</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber9</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber9</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium9</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium9</questionid>
+                    <description>-Hidden- Premium for Device 9</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras9</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo9</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo9</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo9</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo9</questionid>
+                    <description>Liquid Damage</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>8</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page10</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>Page11</questionpageid>
+            <questionpagename>Device 10 Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>DropDown</type>
+                    <questionid>DeviceType10</questionid>
+                    <description>What type of device is this?</description>
+                    <answers>
+                        <answer>
+                            <description>- Select -</description>
+                            <value>- Select -</value>
+                        </answer>
+                        <answer>
+                            <description>Mobile Phone</description>
+                            <value>Mobile Phone</value>
+                        </answer>
+                        <answer>
+                            <description>Tablet</description>
+                            <value>Tablet</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDetails10</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>FileLookup</type>
+                    <questionid>MobileDetails10</questionid>
+                    <description>Please select the Device Make and Model</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceTier10</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>DeviceTier10</questionid>
+                    <description>-Hidden- Device Tier</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType10</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceNumber10</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Number</type>
+                    <questionid>MobileDeviceNumber10</questionid>
+                    <description>Mobile Phone/Device Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType10</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>MobileDeviceIMEI10</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>MobileDeviceIMEI10</questionid>
+                    <description>Mobile Phone/Device IMEI</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Mobile Phone</test>
+                                    <testquestion>DeviceType10</testquestion>
+                                    <testtype>NOT_EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DeviceSerialNumber10</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Text</type>
+                    <questionid>DeviceSerialNumber10</questionid>
+                    <description>Device Serial Number</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>zzzzz</test>
+                                    <testquestion>2347ClientName</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>DevicePremium10</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>Money</type>
+                    <questionid>DevicePremium10</questionid>
+                    <description>-Hidden- Premium for Device 10</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>SmallTitle</type>
+                    <questionid>Extras10</questionid>
+                    <description>&lt;b&gt;Extras Selected&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>TheftYesNo10</questionid>
+                    <description>Theft</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <triggers>
+                        <trigger>
+                            <rules>
+                                <rule>
+                                    <test>Tablet</test>
+                                    <testquestion>DeviceType</testquestion>
+                                    <testtype>EQUAL</testtype>
+                                    <warningtext />
+                                </rule>
+                            </rules>
+                            <targetquestion>LossYesNo10</targetquestion>
+                            <action i:nil="true" />
+                        </trigger>
+                    </triggers>
+                    <type>YesNo</type>
+                    <questionid>LossYesNo10</questionid>
+                    <description>Loss</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>YesNo</type>
+                    <questionid>LiquidYesNo10</questionid>
+                    <description>Liquid Damage</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+            <triggers>
+                <trigger>
+                    <rules>
+                        <rule>
+                            <test>9</test>
+                            <testquestion>NumberOfDevices</testquestion>
+                            <testtype>GREATER_THAN</testtype>
+                            <warningtext />
+                        </rule>
+                    </rules>
+                    <targetpage>Page11</targetpage>
+                    <action>DISPLAY</action>
+                </trigger>
+            </triggers>
+        </questionpage>
+        <questionpage>
+            <questionpageid>PageCalculation</questionpageid>
+            <questionpagename>Cover Details</questionpagename>
+            <questions>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>BasicPremiumTotal</questionid>
+                    <description>&lt;b&gt;Basic Premium Total&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>PackageDiscount</questionid>
+                    <description>- Discount</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>TotalPremiumNet</questionid>
+                    <description>&lt;b&gt;Total Premium (Net)&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>IPT</questionid>
+                    <description>+ IPT</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>PolicyFee</questionid>
+                    <description>+ Policy Fee</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>TotalPremium</questionid>
+                    <description>&lt;b&gt;Total Premium&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>CommissionFromInsurer</questionid>
+                    <description>&lt;b&gt;Commission From Insurer&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>Commission</questionid>
+                    <description>&lt;b&gt;Total Commission&lt;/b&gt;</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+                <question>
+                    <helptext />
+                    <tag />
+                    <type>Total</type>
+                    <questionid>DueFromBroker</questionid>
+                    <description>(Due From Broker)</description>
+                    <answers>
+                        <answer>
+                            <description />
+                            <value>The value here</value>
+                        </answer>
+                    </answers>
+                </question>
+            </questions>
+        </questionpage>
+    </questionset>
+    <schemeid>####</schemeid>
+    <archived>false</archived>
+    <client />
+    <deleted>false</deleted>
+</case>
