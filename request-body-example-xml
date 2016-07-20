@@ -1107,7 +1107,7 @@
                     </triggers>
                     <type>CheckBox</type>
                     <questionid>MobileDeviceNotActiveYet4</questionid>
-                    <description>Tick here if your mobile phone/device does not yet have a phone number / IMEI.&lt;br/&gt;&lt;span style="margin-left:25px"&gt;(You will need to supply these details later by calling 01702 222 888).&lt;/span&gt;</description>
+                    <description>Tick here if your mobile phone/device does not yet have a phone number / IMEI.&lt;br/&gt;&lt;span style="margin-left:25px"&gt;(You will need to supply these details later by calling 01234 567 8910).&lt;/span&gt;</description>
                     <answers>
                         <answer>
                             <description />
